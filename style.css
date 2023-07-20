@@ -48,11 +48,12 @@ ul {
     align-items: center;
     gap: 18px;
 }
-ul > button{
+
+ul>button {
     display: flex;
     gap: 8px;
     align-items: center;
-     border: none;
+    border: none;
 }
 
 .nav-img>img {
@@ -178,6 +179,10 @@ ul > button{
     width: 100%;
 }
 
+.hover-text {
+    color: #FF42A5;
+}
+
 .hover {
     display: none;
     position: absolute;
@@ -255,13 +260,16 @@ figcaption {
     justify-content: center;
     width: 80%;
     gap: 50px;
-}
 
-.game {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid white;
+
+    .game {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 2px solid white;
+        border-radius: 50px;
+        background-color: white;
+    }
 }
 
 .game>img {
@@ -294,6 +302,18 @@ figcaption {
     text-align: center;
 }
 
+.icon-div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+.icon-div>button {
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
 .footer-description {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -301,21 +321,116 @@ figcaption {
     margin: 35px 0px;
     text-align: center;
 }
-.icon-div{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 25px;
-    text-align: center;
-}
-.icon-div>button{
-    padding: 8px 10px;
-    border-radius: 8px;
-}
 
+
+
+.hide {
+    display: none;
+}
 
 /* small device responsive */
 
-@media screen and (max-width: 576px ){
-    
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-description {
+        width: 100%;
+        padding: 55px 0;
+    }
+
+    .banner-img {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .funny-videos-div {
+        flex-direction: column;
+    }
+
+    .game-aniuversary {
+        flex-direction: column;
+    }
+
+    .game-aniversary-desription-parrent-div {
+        width: 100%;
+    }
+
+    .game-aniversary-desription {
+        text-align: center;
+    }
+
+
+    .game-aniversary-img {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .small-img {
+        margin-left: 0;
+        height: 180px;
+        width: 150px;
+        margin-top: 380px;
+    }
+
+    .games-parent-div {
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .game {
+        gap: 0;
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+
+    .game img {
+        width: 20px;
+    }
+
+    .game p {
+        font-size: 11px;
+    }
+
+    .footer-main-div {
+        border: 2px solid white;
+    }
+
+    .footer-game-name {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .icon-div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-description {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-last {
+        text-align: center;
+    }
+
 
 }
+
+
+
+/* medium device responsive */
+
