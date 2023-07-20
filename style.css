@@ -426,11 +426,41 @@ figcaption {
     .footer-last {
         text-align: center;
     }
-
-
 }
 
 
 
 /* medium device responsive */
+
+@media screen and  ( min-width: 576px ) and (max-width: 992px) {
+    nav{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-description {
+        width: 100%;
+        padding: 55px 0;
+    }
+
+    .banner-img {
+        width: 100%;
+        text-align: center;
+    }
+    .funny-videos-div{
+        flex-wrap: wrap;
+    }
+    .video{
+        width: 45%;
+    }
+    .game-aniuversary{
+        gap: 80px;
+    }
+    .small-img{
+        margin-top: 160px;
+        margin-left: 280px;
+    }
+}
 
