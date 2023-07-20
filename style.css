@@ -48,6 +48,12 @@ ul {
     align-items: center;
     gap: 18px;
 }
+ul > button{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+     border: none;
+}
 
 .nav-img>img {
     width: 55px;
@@ -215,9 +221,8 @@ figcaption {
 .game-aniversary-desription {
     text-align: end;
 }
-.anniversary-title{
 
-}
+.anniversary-title {}
 
 .game-aniversary-img {
     width: 50%;
@@ -227,7 +232,7 @@ figcaption {
     width: 80%;
 }
 
-.small-img{
+.small-img {
     position: absolute;
     width: 13%;
     margin-top: 320px;
@@ -236,13 +241,14 @@ figcaption {
 
 /* game-section */
 
-.game-section{
+.game-section {
     width: 100%;
     margin: 105px 0 0;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     padding: 100px 0;
 }
-.games-parent-div{
+
+.games-parent-div {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -250,19 +256,66 @@ figcaption {
     width: 80%;
     gap: 50px;
 }
-.game{
-display: flex;
-align-items: center;
-gap: 10px;
+
+.game {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid white;
 }
-.game>img{
+
+.game>img {
     width: 25%;
 }
 
-.game:hover{
+.game:hover {
     border: 2px solid #FF42A5;
     border-radius: 50px;
     color: #FF42A5;
 }
 
 /* footer section */
+
+.footer-main-div {
+    width: 100%;
+    padding: 100px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #0B0223;
+    color: white;
+}
+
+.footer-game-name {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.footer-description {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 35px 0px;
+    text-align: center;
+}
+.icon-div{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+.icon-div>button{
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+
+/* small device responsive */
+
+@media screen and (max-width: 576px ){
+    
+
+}
